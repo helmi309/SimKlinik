@@ -198,7 +198,7 @@
                             .then((willDelete) => {
                                 if (willDelete) {
                                     $.ajax({
-                                        url: '/hapus-pembayaran-detail/' + id,
+                                        url: '{!!  url('/'); !!}'+'/hapus-pembayaran-detail/' + id,
                                         data: {
                                             "id": id,
                                             "_token": $("input[name='_token']").val(),
@@ -253,7 +253,7 @@
                             .then((willDelete) => {
                                 if (willDelete) {
                                     $.ajax({
-                                        url: '/posting-pembayaran-detail/' + id,
+                                        url: '{!!  url('/'); !!}'+'/posting-pembayaran-detail/' + id,
                                         data: {
                                             "id": id,
                                             "value": value,
