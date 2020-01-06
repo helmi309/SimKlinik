@@ -169,12 +169,12 @@
                     $(document).on('click', '#loadmodaltransaksicreate', function (event) {
                         event.preventDefault();
                         $("#loadmodaltransaksicreate").prop('disabled', true);
-                        $('#modaladdtransaksi').load("/load-modal-data-create-transaksi/" + '{!! Crypt::encrypt($data->id) !!}');
+                        $('#modaladdtransaksi').load('{!!  url('/'); !!}'+"/load-modal-data-create-transaksi/" + '{!! Crypt::encrypt($data->id) !!}');
                     })
                     $(document).on('click', '#loadmodaltransaksitindakancreate', function (event) {
                         event.preventDefault();
                         $("#loadmodaltransaksitindakancreate").prop('disabled', true);
-                        $('#modaladdtransaksitindakan').load("/load-modal-data-create-transaksi-tindakan/" + '{!! Crypt::encrypt($data->id) !!}');
+                        $('#modaladdtransaksitindakan').load('{!!  url('/'); !!}'+"/load-modal-data-create-transaksi-tindakan/" + '{!! Crypt::encrypt($data->id) !!}');
                     })
                     $(document).on('click', '.delete', function (event) {
                         event.preventDefault();
